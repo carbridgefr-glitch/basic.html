@@ -1,0 +1,22 @@
+{
+  "name": "Basic Digital Card",
+  "short_name": "Basic Card",
+  "start_url": "./basic.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#111111",
+  "description": "Basic NFC digital landing page",
+  "icons": [
+    {
+      "src": "lovetoprint-logo.png.jpeg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "lovetoprint-logo.png.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
