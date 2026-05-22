@@ -8,10 +8,10 @@
 
   <meta name="theme-color" content="#111111">
   <link rel="manifest" href="manifest-basic.json">
-  <link rel="apple-touch-icon" href="lovetoprint-logo.png.jpeg">
+  <link rel="apple-touch-icon" href="basic.png">
 
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-title" content="Digital Card">
+  <meta name="apple-mobile-web-app-title" content="Basic Card">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
   <style>
@@ -224,7 +224,7 @@
       text-align: right;
     }
 
-    .info {
+    .section {
       padding: 0 18px 24px;
     }
 
@@ -250,6 +250,53 @@
       line-height: 1.55;
       color: #4b5563;
       font-weight: 700;
+    }
+
+    .basic-includes {
+      border-radius: 24px;
+      background:
+        radial-gradient(circle at top right, rgba(132,207,53,0.18), transparent 30%),
+        linear-gradient(135deg, #111111, #222222);
+      padding: 18px;
+      box-shadow: 0 16px 34px rgba(0,0,0,0.18);
+      color: #ffffff;
+      border: 1px solid rgba(132,207,53,0.45);
+    }
+
+    .basic-image {
+      width: 100%;
+      display: block;
+      border-radius: 18px;
+      margin-bottom: 16px;
+      background: #ffffff;
+      object-fit: contain;
+      box-shadow: 0 12px 26px rgba(0,0,0,0.22);
+    }
+
+    .basic-includes h2 {
+      margin: 0 0 12px;
+      color: #b8f07a;
+      font-size: 20px;
+      font-weight: 900;
+      text-align: center;
+    }
+
+    .basic-includes ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 10px;
+    }
+
+    .basic-includes li {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 14px;
+      padding: 11px 12px;
+      font-size: 14px;
+      line-height: 1.4;
+      font-weight: 800;
     }
 
     .footer {
@@ -486,12 +533,26 @@
 
     </section>
 
-    <section class="info">
+    <section class="section">
       <div class="info-card">
         <h2>Basic Package</h2>
         <p>
           Ιδανικό για επιχειρήσεις που θέλουν μια απλή, γρήγορη και καθαρή NFC landing page με τα βασικά κουμπιά επικοινωνίας.
         </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="basic-includes">
+        <img src="basic.png" alt="Basic Package" class="basic-image">
+
+        <h2>Basic Package περιλαμβάνει</h2>
+        <ul>
+          <li>Απλή NFC landing page με καθαρή εμφάνιση.</li>
+          <li>Website, Google Review, Google Map και τηλέφωνο επικοινωνίας.</li>
+          <li>Κουμπί αποθήκευσης της κάρτας στο κινητό.</li>
+          <li>Ιδανικό για γρήγορη παρουσίαση μιας επιχείρησης.</li>
+        </ul>
       </div>
     </section>
 
@@ -544,7 +605,7 @@
   <script>
     const BUSINESS_NAME = "Όνομα Επιχείρησης";
     const BUSINESS_PHONE = "+306900000000";
-    const BUSINESS_PROFILE = "https://carbridgefr-glitch.github.io/lovetoprint-profile/basic.html";
+    const BUSINESS_PROFILE = "https://carbridgefr-glitch.github.io/basic.html/";
 
     let deferredPrompt;
 
